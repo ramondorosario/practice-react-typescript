@@ -1,0 +1,23 @@
+@import "../../../variables.module.scss";
+
+.container {
+  button {
+    background-color: $backgroundButton;
+    border: 0;
+    padding: 11px 60px;
+    border-radius: 20px;
+    color: $white;
+    font-family: "Monteserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 48px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      background-color: $buttonDisabled;
+    }
+  }
+}
