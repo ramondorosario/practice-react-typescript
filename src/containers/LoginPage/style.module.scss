@@ -1,0 +1,51 @@
+@import "../../global.module.scss";
+
+.container {
+  background-color: $backgroundGlobal;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    padding: 48px 72px 72px;
+    max-width: 405px;
+    width: 100%;
+    box-shadow: $boxShadowCard;
+    border-radius: 16px;
+
+    .logo {
+      margin-bottom: 16px;
+    }
+
+    .inputError {
+      color: $error;
+      font-size: 12px;
+      align-self: flex-start;
+    }
+  }
+
+  .link_container {
+    margin-top: 16px;
+    align-self: flex-end;
+
+    a {
+      font-size: 12px;
+      color: $labelLink;
+    }
+  }
+
+  .footer {
+    margin-top: 32px;
+    font-size: 14px;
+
+    a {
+      color: $pink;
+    }
+  }
+}
