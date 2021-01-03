@@ -9,7 +9,7 @@
     background-color: $backgroundCard;
     color: $white;
     padding: 20px 24px;
-    box-shadow: $boxShadowCard;
+    box-shadow: $boxShadowCard02;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,6 @@
     .text {
       display: flex;
       align-items: center;
-      font-size: 14px;
       margin-bottom: 9px;
 
       span {
