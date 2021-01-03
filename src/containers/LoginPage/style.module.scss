@@ -16,7 +16,7 @@
     padding: 48px 72px 72px;
     max-width: 405px;
     width: 100%;
-    box-shadow: $boxShadowCard;
+    box-shadow: $boxShadowCard01;
     border-radius: 16px;
 
     .logo {
@@ -42,7 +42,6 @@
 
   .footer {
     margin-top: 32px;
-    font-size: 14px;
 
     a {
       color: $pink;
