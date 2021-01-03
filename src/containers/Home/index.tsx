@@ -13,7 +13,7 @@ export function Home() {
       <SideBar />
 
       <div className={s.body}>
-        <Header />
+        <Header style={{ background: "transparent" }} />
         <div className={s.content}>
           <div className={s.content_menu}>
             <ul>
