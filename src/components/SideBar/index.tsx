@@ -27,7 +27,7 @@ export function SideBar() {
         <NavLink activeClassName={s.selected} to="/customers">
           <div>
             <IconCustomers className={s.icon} />
-            Cobranças
+            Clientes
           </div>
         </NavLink>
       </div>
