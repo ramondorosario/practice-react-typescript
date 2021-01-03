@@ -1,10 +1,10 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { Profile } from "../Profile";
 import s from "./style.module.scss";
 
-export function Header() {
+export function Header({ ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={s.container}>
+    <div {...props} className={s.container}>
       <div className={s.balance_card}>
         <div className={s.text}>
           <span>$</span> Saldo em conta
