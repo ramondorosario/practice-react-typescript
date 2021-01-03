@@ -1,0 +1,49 @@
+@import "../../variables.module.scss";
+
+.container {
+  background-color: $backgroundSideBar;
+  max-width: 264px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 58px;
+
+    a {
+      width: 100%;
+      text-decoration: none;
+      color: $white;
+      font-size: 12px;
+      font-weight: bold;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin: 16px 48px;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          width: 24px;
+          margin-right: 20px;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 288px;
+      }
+    }
+
+    .selected {
+      background-color: $menuSelected;
+    }
+  }
+}
