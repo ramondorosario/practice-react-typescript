@@ -6,5 +6,110 @@
   .content {
     width: 100%;
     padding: 32px 54px 60px 72px;
+
+    &_menu {
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin: 123px 0 40px;
+        border-bottom: 1px solid $colorMenuCard;
+        color: $menuUnselected;
+        font-size: 16px;
+
+        li {
+          padding: 13px 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .selected {
+          color: $colorMenuCard;
+          position: relative;
+        }
+
+        .selected::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 3px;
+          width: 100%;
+          background-color: $colorMenuCard;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      align-items: flex-start;
+      margin: -40px;
+
+      .card {
+        overflow: hidden;
+        width: 100%;
+        margin: 40px;
+        border-radius: 16px;
+        background-color: $white;
+        box-shadow: $boxShadowCard02;
+
+        .header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $backgroundCard;
+          color: $white;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 32px 0;
+
+          span {
+            margin-left: 20px;
+          }
+        }
+
+        &_content {
+          padding: 40px 72px;
+          font-weight: 600;
+
+          .condition {
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 16px 18px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .value {
+            font-size: 36px;
+          }
+
+          .in_day {
+            border-color: $green;
+            color: $green;
+          }
+
+          .pending {
+            border-color: $red;
+            color: $red;
+          }
+
+          .expected {
+            border-color: $blue;
+            color: $blue;
+          }
+        }
+      }
+    }
   }
 }
