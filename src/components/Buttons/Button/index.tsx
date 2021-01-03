@@ -3,7 +3,7 @@ import s from "./style.module.scss";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLElement> {
   children: string;
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 export function Button({ children, disabled, ...props }: ButtonProps) {
