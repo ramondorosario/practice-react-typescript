@@ -6,14 +6,22 @@ const LoginPage = React.lazy(() =>
     default: res.LoginPage,
   }))
 );
+
 const SignupPage = React.lazy(() =>
   import("../containers/SignupPage").then((res) => ({
     default: res.SignupPage,
   }))
 );
+
 const ForgotPassword = React.lazy(() =>
   import("../containers/ForgotPassword").then((res) => ({
     default: res.ForgotPassword,
+  }))
+);
+
+const Home = React.lazy(() =>
+  import("../containers/Home").then((res) => ({
+    default: res.Home,
   }))
 );
 
@@ -24,6 +32,7 @@ export function Routes() {
       <Route path="/login" component={LoginPage} />
       <Route path="/signup" component={SignupPage} />
       <Route path="/forgot-password" component={ForgotPassword} />
+      <Route path="/home" component={Home} />
     </Switch>
   );
 }
